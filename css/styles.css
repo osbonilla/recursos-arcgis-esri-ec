@@ -1,5 +1,6 @@
 /* ============================================================
-   RECURSOS ESRI EC 
+   RECURSOS ESRI EC — Esri Community inspired design
+   Paleta: morado profundo → azul Esri, blanco, glassmorphism
    ============================================================ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -721,4 +722,59 @@ body.modal-open { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 600px) {
+
+  /* Header: ocultar subtítulo para ganar espacio */
+  .brand-sub { display: none; }
+
+  /* Header más compacto */
+  .header-inner { padding: 0 12px; gap: 8px; }
+  .brand-logo-img { height: 26px; }
+  .brand-title { font-size: 14px; }
+
+  /* Nav botones: solo ícono */
+  .nav-btn span { display: none; }
+  .nav-btn { padding: 7px 10px; gap: 0; }
+
+  /* Auth: solo avatar, sin nombre */
+  .user-name { display: none; }
+  .user-pill { padding: 3px; }
+  .btn-login span { display: none; }
+  .btn-login { padding: 7px 10px; gap: 0; }
+
+  /* Hero más compacto */
+  .search-hero { padding: 28px 16px 24px; }
+  .search-title { font-size: 26px; }
+  .search-subtitle { font-size: 13px; margin-bottom: 18px; }
+
+  /* Buscador: quitar ⌘K si quedó */
+  .search-shortcut { display: none; }
+
+  /* Search input padding */
+  .search-input { height: 48px; font-size: 14px; padding: 0 16px 0 44px; }
+
+  /* Stats hero: más pequeño */
+  .hero-stats { gap: 12px; margin-top: 16px; }
+  .hero-stat { font-size: 12px; }
+  .hero-stat strong { font-size: 15px; }
+
+  /* Filter bar */
+  .filter-bar { padding: 14px 0 8px; gap: 8px; }
+  .filter-label { font-size: 10px; }
+  .tag-chip { font-size: 11px; padding: 4px 11px; }
+
+  /* Cards */
+  .resource-card { padding: 16px; }
+  .card-title { font-size: 13px; }
+  .card-desc { font-size: 12px; }
+
+  /* Main padding */
+  .main-content { padding: 0 12px 60px; }
+
+  /* Stats bar */
+  .stats-bar { font-size: 12px; }
+  .sort-select { font-size: 12px; padding: 5px 8px; }
 }

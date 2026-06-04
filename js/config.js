@@ -55,6 +55,8 @@ const CONFIG = {
     { id: "arcgis-python",       label: "API Python",           color: "green"  },
     { id: "mission",             label: "Mission",              color: "dark"   },
     { id: "indoors",             label: "ArcGIS Indoors",       color: "blue"   },
+    { id: "knowledge",           label: "ArcGIS Knowledge",      color: "green"  },
+    { id: "ia",                  label: "Inteligencia Artificial", color: "dark"   },
     { id: "otro",                label: "Otro",                 color: "gray"   },
   ],
 };
